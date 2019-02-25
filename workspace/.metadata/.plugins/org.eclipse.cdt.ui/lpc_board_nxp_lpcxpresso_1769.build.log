@@ -1,0 +1,23 @@
+14:59:51 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+Building file: ../src/board.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"/home/jatin/Documents/MCUXpresso_10.3.0_2200/workspace/lpc_chip_175x_6x/inc" -I"/home/jatin/Documents/MCUXpresso_10.3.0_2200/workspace/lpc_board_nxp_lpcxpresso_1769/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/board.d" -MT"src/board.o" -MT"src/board.d" -o "src/board.o" "../src/board.c"
+../src/board.c:33:20: warning: extra tokens at end of #include directive
+ #include "string.h"ude "retarge************************************************
+                    ^~~
+../src/board.c:33:24: warning: missing terminating " character
+ #include "string.h"ude "retarge************************************************
+                        ^
+../src/board.c:34:12: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'types'
+  * Private types/enumerations/variables
+            ^~~~~
+../src/board.c: In function 'Board_I2C_Init':
+../src/board.c:289:2: warning: enumeration value 'I2C_NUM_INTERFACE' not handled in switch [-Wswitch]
+  switch (id) {
+  ^~~~~~
+make: *** [src/board.o] Error 1
+src/subdir.mk:24: recipe for target 'src/board.o' failed
+
+14:59:51 Build Finished (took 483ms)
+

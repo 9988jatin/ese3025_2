@@ -1,0 +1,19 @@
+13:11:35 **** Incremental Build of configuration Debug for project hellooo ****
+make -r -j4 all 
+Building file: ../src/hellooo.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -D__LPC17XX__ -D__REDLIB__ -I"/home/jatin/Documents/MCUXpresso_10.3.0_2200/workspace/lpc_board_nxp_lpcxpresso_1769/inc" -I"/home/jatin/Documents/MCUXpresso_10.3.0_2200/workspace/lpc_chip_175x_6x/inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/hellooo.d" -MT"src/hellooo.o" -MT"src/hellooo.d" -o "src/hellooo.o" "../src/hellooo.c"
+../src/hellooo.c:2:14: error: expected '=', ',', ';', 'asm' or '__attribute__' before ':' token
+  Name        : hellooo.c
+              ^
+In file included from /home/jatin/Documents/MCUXpresso_10.3.0_2200/workspace/lpc_board_nxp_lpcxpresso_1769/inc/board_api.h:36:0,
+                 from /home/jatin/Documents/MCUXpresso_10.3.0_2200/workspace/lpc_board_nxp_lpcxpresso_1769/inc/board.h:235,
+                 from ../src/hellooo.c:14:
+/usr/local/mcuxpressoide-10.3.0_2200/ide/plugins/com.nxp.mcuxpresso.tools.linux_10.3.0.201811011841/tools/redlib/include/stdio.h:105:22: error: array type has incomplete element type 'FILE {aka struct __FILE_struct}'
+ extern __THREAD FILE __Ciob[];
+                      ^~~~~~
+src/subdir.mk:27: recipe for target 'src/hellooo.o' failed
+make: *** [src/hellooo.o] Error 1
+
+13:11:36 Build Finished (took 482ms)
+
